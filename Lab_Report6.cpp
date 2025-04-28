@@ -22,6 +22,7 @@ bool C(string& str, int& index) {
     }
     return true;
 }
+
 bool D(string& str, int& index) {
     if (index < str.length() && str[index] == 'd') {
         index++;
