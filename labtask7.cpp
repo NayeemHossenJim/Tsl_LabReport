@@ -9,12 +9,16 @@ bool A();
 bool B();
 
 bool S() {
-    if (input[pos] == 'b') {
+    if (input[pos] == 'b') 
+    {
         pos++;
         return true;
-    } else {
+    } 
+    else 
+    {
         int startPos = pos;
-        if (A() && B()) {
+        if (A() && B()) 
+        {
             return true;
         }
         pos = startPos;
@@ -22,10 +26,13 @@ bool S() {
     }
 }
 
-bool A() {
-    if (input[pos] == 'a') {
+bool A() 
+{
+    if (input[pos] == 'a') 
+    {
         pos++;
-        if (pos < input.length() && input[pos] == 'a') {
+        if (pos < input.length() && input[pos] == 'a') 
+        {
             return A();
         }
         return true;
@@ -33,8 +40,10 @@ bool A() {
     return false;
 }
 
-bool B() {
-    if (input[pos] == 'b') {
+bool B()
+{
+    if (input[pos] == 'b') 
+    {
         pos++;
         return true;
     }
